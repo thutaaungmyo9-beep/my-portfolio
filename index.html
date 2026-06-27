@@ -1,192 +1,241 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thu Ta Aung Myo - Network Engineer</title>
+    <title>Thu Ta Aung Myo | Network Engineer</title>
+
     <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-    <!-- ===== HEADER ===== -->
+    <!-- ================= NAVBAR ================= -->
     <header>
-        <h1>Thu Ta Aung Myo</h1>
-        <p>Network Engineer</p>
+        <nav class="navbar">
+            <div class="logo">TAM</div>
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#certificates">Certificates</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="menu-btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </nav>
     </header>
 
-    <!-- ===== ABOUT ===== -->
-    <section>
-        <h2>About Me</h2>
-        <p>
-            Network Engineer with over a year of hands-on experience designing, configuring, and maintaining 
-            enterprise networks across Cisco, Fortinet firewall, Ruijie Cloud, and TP-Link Omada platforms. 
-            Skilled in troubleshooting LAN/WAN, network security, and wireless infrastructure.
-        </p>
-    </section>
-
-    <!-- ===== EDUCATION ===== -->
-    <section>
-        <h2>Education</h2>
-
-        <div class="card">
-            <h3>Higher Diploma in Infrastructure &amp; Networking</h3>
-            <p><strong>Institution:</strong> Auston Institute</p>
-            <p><strong>Year:</strong> 2024 — 2025</p>
+    <!-- ================= HERO ================= -->
+    <section id="home" class="hero">
+        <div class="hero-left">
+            <h3>Hello, I'm</h3>
+            <h1>Thu Ta Aung Myo</h1>
+            <h2>Network Engineer</h2>
             <p>
-                <strong>Key Areas of Study:</strong> Networking fundamentals, routing and switching, network forensics, 
-                MikroTik configuration, and project management.
+                Passionate about designing, securing and maintaining enterprise
+                networks using Cisco, Fortinet, Ruijie Cloud and TP-Link Omada.
             </p>
-        </div>
-
-        <div class="card">
-            <h3>High School</h3>
-            <p><strong>Institution:</strong> B.E.H.S (3) Sanchaung</p>
-            <p><strong>Year:</strong> 2018 — 2019</p>
-        </div>
-    </section>
-
-    <!-- ===== CERTIFICATES ===== -->
-    <section>
-        <h2>Certificates</h2>
-
-        <div class="card">
-            <p><strong>✔ CCNA 200-301</strong> — CCNA VCE Training <span class="date">(06/2025 - 02/2026)</span></p>
-        </div>
-
-        <div class="card">
-            <p><strong>✔ Cloud Computing Fundamentals</strong> — IBM SkillsBuild <span class="date">(01/2026)</span></p>
-        </div>
-
-        <div class="card">
-            <p><strong>✔ MikroTik Certified Network Associate (MTCNA)</strong> <span class="date">(07/2025 - 10/2025)</span></p>
-        </div>
-
-        <div class="card">
-            <p><strong>✔ Computer Basics (Microsoft)</strong> — KMD <span class="date">(07/2021 - 09/2021)</span></p>
-        </div>
-
-        <div class="card">
-            <p><strong>✔ Business &amp; Essential Employability Skills</strong> — SFUx <span class="date">(06/2021 - 07/2021)</span></p>
-        </div>
-    </section>
-
-    <!-- ===== SKILLS ===== -->
-    <section>
-        <h2>Skills</h2>
-
-        <div class="skill">
-            <span>Routing &amp; Switching</span>
-            <div class="bar"><div style="width:90%"></div></div>
-        </div>
-
-        <div class="skill">
-            <span>Fortinet Firewall</span>
-            <div class="bar"><div style="width:85%"></div></div>
-        </div>
-
-        <div class="skill">
-            <span>Ruijie Cloud</span>
-            <div class="bar"><div style="width:80%"></div></div>
-        </div>
-
-        <div class="skill">
-            <span>TP-Link Omada</span>
-            <div class="bar"><div style="width:80%"></div></div>
-        </div>
-
-        <div class="skill">
-            <span>Network Troubleshooting</span>
-            <div class="bar"><div style="width:88%"></div></div>
-        </div>
-
-        <div class="skill">
-            <span>Netdata Monitoring</span>
-            <div class="bar"><div style="width:75%"></div></div>
-        </div>
-
-        <div class="skill">
-            <span>MikroTik RouterOS</span>
-            <div class="bar"><div style="width:78%"></div></div>
-        </div>
-
-    </section>
-
-    <!-- ===== EXPERIENCE ===== -->
-    <section>
-        <h2>Experience</h2>
-
-        <div class="timeline">
-
-            <div class="timeline-item">
-                <div class="year">2025 — Present</div>
-                <div class="content">
-                    <h3>Network Engineer</h3>
-                    <p><strong>Protocol Solutions</strong></p>
-
-                    <ul>
-                        <li>Installed and maintained routers, switches, firewalls, and access points.</li>
-                        <li>Monitored network performance and resolved LAN/WAN/wireless issues.</li>
-                        <li>Configured VLANs, DHCP, DNS, and IP addressing.</li>
-                        <li>Managed Fortinet firewall policies and Ruijie Cloud monitoring.</li>
-                        <li>Used TP-Link Omada for network configuration and troubleshooting.</li>
-                        <li>Supported users and handled network connectivity issues.</li>
-                        <li>Assisted senior engineers with upgrades and deployments.</li>
-                        <li>Maintained network documentation and infrastructure records.</li>
-                    </ul>
-
-                </div>
+            <div class="hero-buttons">
+                <a href="#contact" class="btn primary">
+                    <i class="fas fa-paper-plane"></i> Hire Me
+                </a>
+                <a href="CV-Thu-Ta-Aung-Myo.pdf" class="btn secondary" download>
+                    <i class="fas fa-download"></i> Download CV
+                </a>
             </div>
-
+            <div class="social-icons">
+                <a href="https://github.com/thutaaungmyo9-beep" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="mailto:thutaaungmyo9@gmail.com">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+        </div>
+        <div class="hero-right">
+            <div class="image-box">
+                <img src="profile.jpg" alt="Thu Ta Aung Myo" id="profile-img">
+                <div class="circle one"></div>
+                <div class="circle two"></div>
+            </div>
         </div>
     </section>
 
-    <!-- ===== PROJECTS ===== -->
-    <section>
-        <h2>Projects</h2>
-
-        <div class="project">
-            <h3>Network Monitoring &amp; Performance Analysis using Netdata</h3>
-            <p>Deployed and configured Netdata on Ubuntu to monitor system and network performance in real time, analyze key metrics, and support troubleshooting and performance improvement.</p>
-        </div>
-
-        <div class="project">
-            <h3>Cisco Switch &amp; Router Network Deployment</h3>
-            <p>Designed and implemented a LAN network using Cisco routers and switches, configuring VLANs, Router-on-a-Stick for inter-VLAN routing, EtherChannel for link aggregation, VoIP services, Port Security, and ACLs to enhance network performance and security.</p>
-        </div>
-
-        <div class="project">
-            <h3>Network Configuration &amp; Routing Lab using MikroTik Routers</h3>
-            <p>Gained hands-on experience with MikroTik RouterOS, including IP addressing, routing, NAT, DHCP, firewall configuration, and wireless network setup.</p>
-        </div>
-
-        <div class="project">
-            <h3>Enterprise WiFi Deployment (Omada)</h3>
-            <p>Configured TP-Link Omada controller for office WiFi, including SSID setup, VLAN segmentation, and user access control.</p>
-        </div>
-
-        <div class="project">
-            <h3>Firewall Security Implementation</h3>
-            <p>Implemented Fortinet firewall policies for web filtering, application control, and network security enforcement.</p>
-        </div>
-
-        <div class="project">
-            <h3>Cloud Network Monitoring</h3>
-            <p>Used Ruijie Cloud to monitor network devices, troubleshoot issues, and improve network performance.</p>
-        </div>
-
-    </section>
-
-    <!-- ===== CONTACT ===== -->
-    <section class="contact-section">
-        <h2>Contact</h2>
-        <div class="contact-card">
-            <p><strong>📧 Email:</strong> <a href="mailto:yourname@gmail.com">thutaaungmyo9@gmail.com</a></p>
-            <p><strong>📱 Phone:</strong> <a href="tel:+95XXXXXXXX">+95 9769956237</a></p>
-            <p><strong>📍 Location:</strong> Myanmar</p>
-            <p><strong>🐙 GitHub:</strong> <a href="#">github.com/thutaaungmyo9-beep</a></p>
+    <!-- ================= ABOUT ================= -->
+    <section id="about" class="section">
+        <h2 class="title">About Me</h2>
+        <div class="about-container">
+            <div class="about-card">
+                <i class="fas fa-user"></i>
+                <h3>Who Am I?</h3>
+                <p>
+                    I am a Network Engineer with experience in Cisco Routing &
+                    Switching, Fortinet Firewall, MikroTik, TP-Link Omada,
+                    Ruijie Cloud and enterprise network troubleshooting.
+                </p>
+            </div>
+            <div class="about-card">
+                <i class="fas fa-code"></i>
+                <h3>What I Do</h3>
+                <p>
+                    ✔ LAN/WAN Troubleshooting<br>
+                    ✔ Firewall Configuration<br>
+                    ✔ Wireless Deployment<br>
+                    ✔ VLAN & Routing<br>
+                    ✔ VPN Configuration
+                </p>
+            </div>
+            <div class="about-card">
+                <i class="fas fa-map-marker-alt"></i>
+                <h3>Location</h3>
+                <p>
+                    <i class="fas fa-flag"></i> Myanmar
+                </p>
+            </div>
         </div>
     </section>
 
+    <!-- ================= EDUCATION ================= -->
+    <section id="education" class="section">
+        <h2 class="title">Education</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <h3>Higher Diploma in Infrastructure & Networking</h3>
+                <span><i class="far fa-calendar-alt"></i> 2024 - 2025</span>
+                <p><i class="fas fa-university"></i> Auston Institute</p>
+            </div>
+            <div class="timeline-item">
+                <h3>High School Diploma</h3>
+                <span><i class="far fa-calendar-alt"></i> 2018 - 2019</span>
+                <p><i class="fas fa-school"></i> B.E.H.S (3) Sanchaung</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= SKILLS ================= -->
+    <section id="skills" class="section">
+        <h2 class="title">Technical Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-card"><i class="fas fa-network-wired"></i> Cisco</div>
+            <div class="skill-card"><i class="fas fa-firewall"></i> Fortinet</div>
+            <div class="skill-card"><i class="fas fa-router"></i> MikroTik</div>
+            <div class="skill-card"><i class="fas fa-cloud"></i> Ruijie Cloud</div>
+            <div class="skill-card"><i class="fas fa-wifi"></i> Omada</div>
+            <div class="skill-card"><i class="fab fa-linux"></i> Linux</div>
+            <div class="skill-card"><i class="fas fa-shield-alt"></i> Network Security</div>
+            <div class="skill-card"><i class="fas fa-tools"></i> Troubleshooting</div>
+        </div>
+    </section>
+
+    <!-- ================= PROJECTS ================= -->
+    <section id="projects" class="section">
+        <h2 class="title">Projects</h2>
+        <div class="cards">
+            <div class="card">
+                <i class="fas fa-network-wired"></i>
+                <h3>Cisco Enterprise Network</h3>
+                <p>Configured VLANs, ACL, EtherChannel, Inter-VLAN Routing and Port Security.</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-fire"></i>
+                <h3>Fortinet Firewall Security</h3>
+                <p>Configured Firewall Policy, Application Control and Web Filtering.</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-cloud"></i>
+                <h3>Ruijie Cloud Management</h3>
+                <p>Cloud Monitoring, Switch & AP Management.</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-wifi"></i>
+                <h3>Enterprise WiFi Deployment</h3>
+                <p>TP-Link Omada controller setup with VLAN segmentation and access control.</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-chart-line"></i>
+                <h3>Network Monitoring</h3>
+                <p>Deployed Netdata on Ubuntu for real-time system and network performance monitoring.</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-router"></i>
+                <h3>MikroTik Routing Lab</h3>
+                <p>IP addressing, NAT, DHCP, firewall configuration and wireless setup.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= CERTIFICATES ================= -->
+    <section id="certificates" class="section">
+        <h2 class="title">Certificates</h2>
+        <div class="cards">
+            <div class="card cert-card">
+                <i class="fas fa-certificate"></i>
+                <h3>CCNA 200-301</h3>
+                <span>CCNA VCE Training</span>
+                <p>06/2025 - 02/2026</p>
+            </div>
+            <div class="card cert-card">
+                <i class="fas fa-certificate"></i>
+                <h3>MTCNA</h3>
+                <span>MikroTik Certified</span>
+                <p>07/2025 - 10/2025</p>
+            </div>
+            <div class="card cert-card">
+                <i class="fas fa-cloud"></i>
+                <h3>IBM Cloud Computing</h3>
+                <span>IBM SkillsBuild</span>
+                <p>01/2026</p>
+            </div>
+            <div class="card cert-card">
+                <i class="fas fa-laptop"></i>
+                <h3>Microsoft Computer Basics</h3>
+                <span>KMD</span>
+                <p>07/2021 - 09/2021</p>
+            </div>
+            <div class="card cert-card">
+                <i class="fas fa-briefcase"></i>
+                <h3>Business & Essential Skills</h3>
+                <span>SFUx</span>
+                <p>06/2021 - 07/2021</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= CONTACT ================= -->
+    <section id="contact" class="section">
+        <h2 class="title">Contact</h2>
+        <div class="contact-box">
+            <p><i class="fas fa-envelope"></i> <a href="mailto:thutaaungmyo9@gmail.com">thutaaungmyo9@gmail.com</a></p>
+            <p><i class="fas fa-phone"></i> <a href="tel:+959769956237">+95 976 995 6237</a></p>
+            <p><i class="fab fa-github"></i> <a href="https://github.com/thutaaungmyo9-beep" target="_blank">github.com/thutaaungmyo9-beep</a></p>
+            <div class="contact-buttons">
+                <a href="mailto:thutaaungmyo9@gmail.com" class="btn primary">
+                    <i class="fas fa-paper-plane"></i> Hire Me
+                </a>
+                <a href="CV-Thu-Ta-Aung-Myo.pdf" class="btn secondary" download>
+                    <i class="fas fa-download"></i> Download CV
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+    <footer>
+        <p>© 2026 Thu Ta Aung Myo. Built with <i class="fas fa-heart" style="color: #00b4ff;"></i></p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
+
 </html>
