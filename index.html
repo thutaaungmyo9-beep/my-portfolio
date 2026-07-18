@@ -757,6 +757,136 @@
         }
 
         /*==========================================
+        CERTIFICATIONS SECTION
+        ==========================================*/
+
+        .cert-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+        gap: 25px;
+        max-width: 1100px;
+        margin: 0 auto;
+        }
+
+        .cert-item {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    padding: 22px 25px;
+    transition: .4s;
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+    display: flex;
+    align-items: center;
+    gap: 20px;
+        }
+
+        .cert-item:hover {
+         transform: translateY(-8px);
+        border-color: var(--primary);
+        box-shadow: 0 18px 40px rgba(0, 212, 255, .18);
+        }
+
+        .cert-icon {
+        width: 60px;
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        flex-shrink: 0;
+        overflow: hidden;
+        border: 2px solid var(--border);
+        background: #ffffff;
+        padding: 4px;
+        }
+
+        .cert-icon img {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        object-fit: contain;
+        }
+
+        .cert-info {
+    flex: 1;
+    min-width: 0;
+        }
+
+        .cert-info h4 {
+        font-size: 16px;
+        font-weight: 600;
+        color: var(--text);
+        margin-bottom: 2px;
+        transition: color 0.3s ease;
+        }
+
+        .cert-info .cert-org {
+        font-size: 13px;
+        color: var(--primary);
+        font-weight: 500;
+        display: block;
+        }
+
+        .cert-info .cert-date {
+        font-size: 12px;
+        color: var(--text3);
+        display: block;
+        margin-top: 2px;
+        }
+
+        .cert-btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        margin-top: 8px;
+        padding: 5px 14px;
+        border-radius: 20px;
+        background: linear-gradient(135deg, var(--primary), var(--secondary));
+        color: #fff;
+        font-size: 12px;
+        font-weight: 500;
+        transition: .3s;
+        border: none;
+        cursor: pointer;
+        text-decoration: none;
+        }
+
+        .cert-btn:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 8px 25px rgba(0, 212, 255, .35);
+        }
+
+        .cert-btn i {
+        font-size: 12px;
+        }
+
+        /* Button Group - ADD THIS */
+        .cert-btn-group {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+            margin-top: 8px;
+        }
+
+        /* Recommendation Button - Gold Premium Look - ADD THIS */
+        .cert-btn.recommendation {
+            background: linear-gradient(135deg, #f59e0b, #d97706);
+        }
+
+        .cert-btn.recommendation:hover {
+            box-shadow: 0 8px 25px rgba(245, 158, 11, 0.4);
+            transform: translateY(-2px);
+        }
+
+        /* Responsive */
+        @media(max-width:768px) {
+        .cert-grid {
+        grid-template-columns: 1fr;
+        }
+        }
+
+        /*==========================================
         SKILLS SECTION
         ==========================================*/
 
@@ -1420,6 +1550,7 @@
                     <li><a href="#home" class="active">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#education">Education</a></li>
+                    <li><a href="#certifications">Certifications</a></li>
                     <li><a href="#skills">Skills</a></li>
                     <li><a href="#experience">Experience</a></li>
                     <li><a href="#projects">Projects</a></li>
@@ -1447,10 +1578,10 @@
         <div class="container">
             <div class="hero-content">
                 <div class="hero-left" data-aos="fade-right">
-                    <span class="hero-tag">👋 Hello, I'm</span>
+                    <span class="hero-tag">Hello, I'm</span>
                     <h1>Thu Ta <span class="highlight">Aung Myo</span></h1>
                     <h2><span id="typing"></span></h2>
-                    <p>Building secure, reliable, and scalable network infrastructures.</p>
+                    <p>Implementing, maintaining, and optimizing secure, reliable, and scalable network infrastructures.</p>
                     <div class="hero-buttons">
                         <a href="assets/CV-Thu-Ta-Aung-Myo.pdf" class="btn primary" download>
                             <i class="fa-solid fa-download"></i> Download CV
@@ -1503,9 +1634,9 @@
                     </div>
                 </div>
                 <div class="about-content" data-aos="fade-left">
-                    <p>
-                        Network Engineer with 1 year of professional experience in network configuration and infrastructure maintenance. Possesses a strong commitment to continuous learning, staying actively updated with the latest networking devices and technologies. Practical expertise includes working with Ruijie, Fortinet, and MikroTik platforms, alongside hands-on experience in public Wi-Fi network implementation.
-                    </p>
+                   <p>
+                         Network Engineer with 9+ months of professional experience in network configuration, implementation, and infrastructure maintenance. Skilled in managing enterprise network environments with hands-on experience across Ruijie, Fortinet, and MikroTik platforms. Experienced in deploying and supporting public Wi-Fi solutions, with the ability to quickly learn new technologies and adapt to evolving network environments. Strong communicator with effective problem-solving skills and a commitment to continuous professional development in networking technologies and industry best practices.
+                   </p>
 
                     <div class="about-info">
                         <div class="info-card">
@@ -1518,8 +1649,8 @@
                         <div class="info-card">
                             <i class="fas fa-envelope"></i>
                             <div>
-                                <h4>Email</h4>
-                                <p><a href="mailto:thutaaungmyo9@email.com" style="color: var(--text2);">thutaaungmyo9@email.com</a></p>
+                                <h4>Gmail</h4>
+                                <p><a href="mailto:thutaaungmyo9@gmail.com" style="color: var(--text2);">thutaaungmyo9@gmail.com</a></p>
                             </div>
                         </div>
                         <div class="info-card">
@@ -1533,7 +1664,7 @@
                             <i class="fas fa-briefcase"></i>
                             <div>
                                 <h4>Experience</h4>
-                                <p>1+ Years</p>
+                                <p>9+ Months</p>
                             </div>
                         </div>
                     </div>
@@ -1595,6 +1726,161 @@
     </section>
 
     <!--====================-->
+<!-- Certifications -->
+<!--====================-->
+<section id="certifications" class="section">
+    <div class="container">
+        <div class="section-title" data-aos="fade-up">
+            <span>Professional Development</span>
+            <h2>Certifications</h2>
+        </div>
+        <div class="cert-grid">
+            
+            <!-- CCNP Training -->
+            <div class="cert-item" data-aos="fade-up" data-aos-delay="100">
+                <div class="cert-icon">
+                    <img src="images/genius-networking-logo.png" alt="Genius Networking">
+                </div>
+                <div class="cert-info">
+                    <h4>CCNP Training</h4>
+                    <span class="cert-org">Genius Networking Training</span>
+                    <span class="cert-date">📅 07/2026 – Present</span>
+                    <a href="certificates/ccnp-training.pdf" class="cert-btn" target="_blank">
+                        <i class="fas fa-file-pdf"></i> View Certificate
+                    </a>
+                </div>
+            </div>
+
+            <!-- Linux for Administrators -->
+            <div class="cert-item" data-aos="fade-up" data-aos-delay="150">
+                <div class="cert-icon">
+                    <img src="images/national-cyber-city-logo.png" alt="National Cyber City">
+                </div>
+                <div class="cert-info">
+                    <h4>Linux for Administrators</h4>
+                    <span class="cert-org">National Cyber City</span>
+                    <span class="cert-date">📅 07/2026 – Present</span>
+                    <a href="certificates/linux-administrators.pdf" class="cert-btn" target="_blank">
+                        <i class="fas fa-file-pdf"></i> View Certificate
+                    </a>
+                </div>
+            </div>
+
+            <!-- Computer A+ -->
+            <div class="cert-item" data-aos="fade-up" data-aos-delay="200">
+                <div class="cert-icon">
+                    <img src="images/national-cyber-city-logo.png" alt="National Cyber City">
+                </div>
+                <div class="cert-info">
+                    <h4>Computer A+</h4>
+                    <span class="cert-org">National Cyber City</span>
+                    <span class="cert-date">📅 07/2026 – Present</span>
+                    <a href="certificates/computer-aplus.pdf" class="cert-btn" target="_blank">
+                        <i class="fas fa-file-pdf"></i> View Certificate
+                    </a>
+                </div>
+            </div>
+
+            <!-- Introduction to Networks (ITN) -->
+            <div class="cert-item" data-aos="fade-up" data-aos-delay="250">
+                <div class="cert-icon">
+                    <img src="images/cisco-academy-logo.png" alt="Cisco Networking Academy">
+                </div>
+                <div class="cert-info">
+                    <h4>Introduction to Networks (ITN)</h4>
+                    <span class="cert-org">Cisco Networking Academy</span>
+                    <span class="cert-date">📅 03/2026 – 05/2026</span>
+                    <a href="certificates/itn-cisco.pdf" class="cert-btn" target="_blank">
+                        <i class="fas fa-file-pdf"></i> View Certificate
+                    </a>
+                </div>
+            </div>
+
+            <!-- Cloud Computing Fundamentals -->
+            <div class="cert-item" data-aos="fade-up" data-aos-delay="300">
+                <div class="cert-icon">
+                    <img src="images/ibm-skillsbuild-logo.png" alt="IBM SkillsBuild">
+                </div>
+                <div class="cert-info">
+                    <h4>Cloud Computing Fundamentals</h4>
+                    <span class="cert-org">IBM SkillsBuild</span>
+                    <span class="cert-date">📅 01/2026</span>
+                    <a href="certificates/cloud-computing-ibm.pdf" class="cert-btn" target="_blank">
+                        <i class="fas fa-file-pdf"></i> View Certificate
+                    </a>
+                </div>
+            </div>
+
+            <!-- CCNA 200-301 -->
+            <div class="cert-item" data-aos="fade-up" data-aos-delay="350">
+                <div class="cert-icon">
+                    <img src="images/ccna-vce-logo.png" alt="CCNA VCE Training">
+                </div>
+                <div class="cert-info">
+                    <h4>CCNA 200-301</h4>
+                    <span class="cert-org">CCNA VCE Training</span>
+                    <span class="cert-date">📅 06/2025 – 02/2026</span>
+                    <div class="cert-btn-group">
+                        <a href="certificates/ccna-200-301.pdf" class="cert-btn" target="_blank">
+                            <i class="fas fa-file-pdf"></i> Certificate
+                        </a>
+                        <a href="certificates/ccna-recommendation-letter.pdf" class="cert-btn recommendation" target="_blank">
+                            <i class="fas fa-star"></i> Recommendation
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MikroTik MTCNA -->
+            <div class="cert-item" data-aos="fade-up" data-aos-delay="400">
+                <div class="cert-icon">
+                    <img src="images/mikrotik-logo.png" alt="MikroTik">
+                </div>
+                <div class="cert-info">
+                    <h4>MikroTik Certified Network Associate (MTCNA)</h4>
+                    <span class="cert-org">MikroTik</span>
+                    <span class="cert-date">📅 07/2025 – 10/2025</span>
+                    <a href="certificates/mtcna-mikrotik.pdf" class="cert-btn" target="_blank">
+                        <i class="fas fa-file-pdf"></i> View Certificate
+                    </a>
+                </div>
+            </div>
+
+            <!-- Computer Basics (Microsoft) -->
+            <div class="cert-item" data-aos="fade-up" data-aos-delay="450">
+                <div class="cert-icon">
+                    <img src="images/kmd-logo.png" alt="KMD">
+                </div>
+                <div class="cert-info">
+                    <h4>Computer Basics (Microsoft)</h4>
+                    <span class="cert-org">KMD</span>
+                    <span class="cert-date">📅 07/2021 – 09/2021</span>
+                    <a href="certificates/computer-basics-microsoft.pdf" class="cert-btn" target="_blank">
+                        <i class="fas fa-file-pdf"></i> View Certificate
+                    </a>
+                </div>
+            </div>
+
+            <!-- Business & Essential Employability Skills -->
+            <div class="cert-item" data-aos="fade-up" data-aos-delay="500">
+                <div class="cert-icon">
+                    <img src="images/sfu-logo.png" alt="SFUx">
+                </div>
+                <div class="cert-info">
+                    <h4>Business & Essential Employability Skills</h4>
+                    <span class="cert-org">SFUx</span>
+                    <span class="cert-date">📅 06/2021 – 07/2021</span>
+                    <a href="certificates/business-skills-sfu.pdf" class="cert-btn" target="_blank">
+                        <i class="fas fa-file-pdf"></i> View Certificate
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+    <!--====================-->
     <!-- Skills -->
     <!--====================-->
 
@@ -1607,28 +1893,28 @@
             <div class="skills-grid">
                 <div class="skill-card" data-aos="zoom-in">
                     <div class="skill-icon"><i class="fas fa-network-wired"></i></div>
-                    <h3>Network Design</h3>
-                    <p>CCNA, VLAN, OSPF, BGP, IS-IS</p>
+                    <h3>Enterprise Networking</h3>
+                    <p>CCNA, VLAN, OSPF, BGP, IS-IS, VoIP</p>
                 </div>
                 <div class="skill-card" data-aos="zoom-in" data-aos-delay="100">
                     <div class="skill-icon"><i class="fas fa-shield-alt"></i></div>
-                    <h3>Security</h3>
-                    <p>Firewalls, Web filtering, App filtering, VPN</p>
+                    <h3>Network Security</h3>
+                    <p>Firewalls, VPN, Web filtering, Application filtering</p>
                 </div>
                 <div class="skill-card" data-aos="zoom-in" data-aos-delay="200">
                     <div class="skill-icon"><i class="fas fa-cloud"></i></div>
-                    <h3>Cloud Fundamental</h3>
-                    <p>IBM, AWS</p>
+                    <h3>Cloud & Network Management</h3>
+                    <p>AWS Cloud, IBM Cloud, Ruijie Cloud, TP-Link Omada Cloud</p>
                 </div>
                 <div class="skill-card" data-aos="zoom-in" data-aos-delay="300">
                     <div class="skill-icon"><i class="fas fa-server"></i></div>
-                    <h3>Infrastructure</h3>
-                    <p>SD-WAN, DNS, DHCP, AP Installation</p>
+                    <h3> Network Infrastructure</h3>
+                    <p>NAT, DNS, DHCP, Subnetting, AP Installation & Management,Omada Hardware Controller, Captive Portal </p>
                 </div>
                 <div class="skill-card" data-aos="zoom-in" data-aos-delay="400">
                     <div class="skill-icon"><i class="fas fa-chart-line"></i></div>
-                    <h3>Monitoring</h3>
-                    <p>Wireshark, Zabbix, Netdata</p>
+                    <h3>Network Monitoring</h3>
+                    <p>Wireshark, Zabbix </p>
                 </div>
             </div>
         </div>
@@ -1638,31 +1924,37 @@
     <!-- Experience -->
     <!--====================-->
     <section id="experience" class="experience section">
-        <div class="container">
-            <div class="section-title" data-aos="fade-up">
-                <span>Career Journey</span>
-                <h2>Work Experience</h2>
-            </div>
-            <div class="timeline">
-                <div class="timeline-item" data-aos="fade-up">
-                    <div class="timeline-dot">
-                        <i class="fas fa-briefcase"></i>
-                    </div>
-                    <div class="timeline-content">
-                        <span class="timeline-date">May 2026 – Present</span>
-                        <h3>Junior Network Engineer</h3>
-                        <h4>Protocol Solutions</h4>
-                        <ul>
-                            <li>Installed, configured, and maintained network infrastructure including routers, switches, firewalls, and access points.</li>
-                            <li>Managed and monitored network devices remotely using Ruijie Cloud platform.</li>
-                            <li>Delivered user support and assisted senior engineers in network upgrades and security deployments.</li>
-                            <li>Diagnosed and resolved LAN, WAN, and wireless connectivity issues to ensure network stability.</li>
-                        </ul>
-                    </div>
+    <div class="container">
+        <div class="section-title" data-aos="fade-up">
+            <span>Career Journey</span>
+            <h2>Work Experience</h2>
+        </div>
+
+        <div class="timeline">
+            <div class="timeline-item" data-aos="fade-up">
+                <div class="timeline-dot" style="background: transparent; border: 2px solid var(--primary); padding: 4px;">
+                    <img src="images/Protocol-Solutions-Logo.jpeg" alt="Protocol Solutions" style="width: 60px; height: 60px; border-radius: 50%; object-fit: contain; background: #ffffff; padding: 6px;">
+                </div>
+
+                <div class="timeline-content">
+                    <span class="timeline-date">October 2025 – Present</span>
+                    <h3>Junior Network Engineer</h3>
+                    <h4>Protocol Solutions</h4>
+
+                    <ul>
+                        <li>Installed, configured, and maintained network infrastructure including routers, switches, firewalls, and wireless access points.</li>
+                        <li>Performed remote network monitoring and management using the Ruijie Cloud platform.</li>
+                        <li>Troubleshot LAN, WAN, and wireless connectivity issues while conducting network health checks to maintain service reliability.</li>
+                        <li>Maintained stable network connectivity across multiple operational sites.</li>
+                        <li>Created and modified firewall policies, NAT rules, and application access controls to support security requirements.</li>
+                        <li>Collaborated with senior engineers on network upgrades, security improvements, and infrastructure projects.</li>
+                        <li>Provided technical support and resolved user network issues to ensure smooth business operations.</li>
+                    </ul>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
     <!--====================-->
     <!-- Projects -->
@@ -1679,12 +1971,13 @@
                 <div class="project-card" data-aos="fade-up">
                     <div class="project-icon"><i class="fas fa-chart-line"></i></div>
                     <div class="project-content">
-                        <h3>Network Monitoring with Netdata</h3>
-                        <p>Deployed and configured Netdata on Ubuntu for real-time system and network performance monitoring. Analyzed key metrics to support troubleshooting and performance optimization.</p>
+                        <h3>Network Monitoring & Infrastructure Management</h3>
+                        <p>Configured and utilized network monitoring platforms including Zabbix, Ruijie Cloud, and TP-Link Omada Cloud to monitor network performance, track device status, analyze operational metrics, and support proactive troubleshooting of network infrastructure.</p>
                         <div class="project-tags">
-                            <span>Netdata</span>
-                            <span>Ubuntu</span>
-                            <span>Performance Monitoring</span>
+                            <span>Zabbix</span>
+                            <span>Ruijie Cloud</span>
+                            <span>TP-Link Omada Cloud</span>
+                            <span>Network Monitoring</span>
                         </div>
                     </div>
                 </div>
@@ -1692,13 +1985,18 @@
                 <div class="project-card" data-aos="fade-up" data-aos-delay="100">
                     <div class="project-icon"><i class="fas fa-network-wired"></i></div>
                     <div class="project-content">
-                        <h3>Cisco LAN Network Deployment</h3>
-                        <p>Designed and implemented a LAN network using Cisco routers and switches. Configured VLANs, Router-on-a-Stick, EtherChannel, VoIP, Port Security, and ACLs to enhance performance and security.</p>
+                        <h3>Cisco Enterprise Network Configuration Lab</h3>
+                        <p>Built and configured a Cisco-based enterprise network lab as part of CCNA training. Implemented IP subnetting, VLANs (Access, Trunk, and Native VLAN), Router-on-a-Stick, EtherChannel, STP, RSTP, DHCP, DNS, ACLs, and routing protocols including EIGRP, OSPF, BGP, and IS-IS. Configured switching and routing features to improve network connectivity, segmentation, and security.</p>
                         <div class="project-tags">
-                            <span>Cisco</span>
-                            <span>VLAN</span>
-                            <span>ACL</span>
-                            <span>VoIP</span>
+                                <span>Cisco</span>
+                                <span>CCNA</span>
+                                <span>VLAN</span>
+                                <span>OSPF</span>
+                                <span>EIGRP</span>
+                                <span>BGP</span>
+                                <span>STP/RSTP</span>
+                                <span>ACL</span>
+
                         </div>
                     </div>
                 </div>
@@ -1706,13 +2004,15 @@
                 <div class="project-card" data-aos="fade-up" data-aos-delay="200">
                     <div class="project-icon"><i class="fas fa-wifi"></i></div>
                     <div class="project-content">
-                        <h3>MikroTik Routing & Configuration Lab</h3>
-                        <p>Hands-on experience with MikroTik RouterOS including IP addressing, routing, NAT, DHCP, firewall configuration, and wireless network setup.</p>
+                        <h3>MikroTik RouterOS Configuration Lab</h3>
+                        <p>Configured MikroTik RouterOS in a hands-on training environment using Winbox. Practiced IP addressing, routing, NAT, DHCP, firewall rules, wireless configuration, user management, and bandwidth control with user priority and data limit policies.</p>
                         <div class="project-tags">
                             <span>MikroTik</span>
+                            <span>Winbox</span>
                             <span>RouterOS</span>
                             <span>NAT</span>
                             <span>Firewall</span>
+                            <span>Bandwidth Management</span>
                         </div>
                     </div>
                 </div>
@@ -1720,11 +2020,11 @@
                 <div class="project-card" data-aos="fade-up" data-aos-delay="300">
                     <div class="project-icon"><i class="fas fa-search"></i></div>
                     <div class="project-content">
-                        <h3>Network Forensics & Security Analysis</h3>
-                        <p>Conducted forensic analysis using Wireshark to examine captured traffic from a victim dump file. Identified active users, open ports, and potential vulnerabilities. Analyzed firewall logs and implemented Windows Defender Firewall rules to block malicious web access.</p>
+                        <h3>Network Security Analysis Lab</h3>
+                        <p>Performed network traffic analysis in a security lab environment using Wireshark to inspect packet captures, identify active hosts, analyze network communications, and detect potential security risks. Reviewed firewall logs and configured Windows Defender Firewall rules to restrict unauthorized web access and improve endpoint security.</p>
                         <div class="project-tags">
                             <span>Wireshark</span>
-                            <span>Forensics</span>
+                            <span>Network Analysis</span>
                             <span>Firewall</span>
                             <span>Windows Defender</span>
                         </div>
@@ -1747,13 +2047,14 @@
                 <div class="project-card" data-aos="fade-up" data-aos-delay="100">
                     <div class="project-icon"><i class="fas fa-cloud-upload-alt"></i></div>
                     <div class="project-content">
-                        <h3>Ruijie Firewall Configuration & Management</h3>
-                        <p>Configured Ruijie firewall to block TikTok and Telegram using Ruijie Cloud. Performed step-by-step implementation including cable testing, High Availability reconfiguration, and license activation to ensure seamless deployment.</p>
+                        <h3>Firewall Security Configuration & Management</h3>
+                        <p> Configured and managed firewall security features across Ruijie and FortiGate platforms, including application filtering and access control policies to restrict unauthorized services such as TikTok and Telegram. Performed firewall deployment activities including cable verification, High Availability configuration on Ruijie Firewall, and license activation to maintain secure and reliable network operations.</p>
                         <div class="project-tags">
-                            <span>Ruijie</span>
-                            <span>Cloud</span>
+                            <span>Ruijie Firewall</span>
+                            <span>FortiGate</span>
+                            <span>Application Filtering</span>
                             <span>HA</span>
-                            <span>Firewall</span>
+                            <span>Firewall Management</span>
                         </div>
                     </div>
                 </div>
@@ -1761,13 +2062,14 @@
                 <div class="project-card" data-aos="fade-up" data-aos-delay="200">
                     <div class="project-icon"><i class="fas fa-wifi"></i></div>
                     <div class="project-content">
-                        <h3>TP-Link Omada Public Wi-Fi Redeployment</h3>
-                        <p>Recovered and redeployed TP-Link Omada network after a factory reset. Reconfigured the SSID, public Wi-Fi captive portal, and applied automated configuration settings to restore full network functionality.</p>
+                        <h3>TP-Link Omada Public Wi-Fi Deployment & Management</h3>
+                        <p>Restored and redeployed TP-Link Omada wireless infrastructure following a factory reset. Configured SSIDs, captive portal authentication, wireless access settings, and automated device configurations to ensure stable public Wi-Fi service availability and reliable user connectivity.</p>
                         <div class="project-tags">
-                            <span>TP-Link</span>
-                            <span>Omada</span>
+                            <span>TP-Link Omada</span>
+                            <span>Wireless Network</span>
                             <span>Public Wi-Fi</span>
                             <span>Captive Portal</span>
+                            <span>Cloud Management</span>
                         </div>
                     </div>
                 </div>
@@ -1854,7 +2156,7 @@
 
         // Typing effect
         const typingElement = document.getElementById('typing');
-        const roles = ['Network Engineer', 'Network Security Engineer', 'Cloud Fundamentalist', 'Infrastructure Engineer'];
+        const roles = ['Network Engineer', 'Network Security Engineer', 'Infrastructure Engineer'];
         let roleIndex = 0;
         let charIndex = 0;
         let isDeleting = false;
